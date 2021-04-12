@@ -28,4 +28,5 @@ module "lambda" {
   memory_size       = var.memory_size
   policy_statements = var.policy_statements
   variables         = var.variables
+  runtime           = var.runtime
 }
