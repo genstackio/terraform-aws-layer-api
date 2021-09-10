@@ -20,7 +20,9 @@ module "api-custom-domain" {
 
 module "lambda" {
   source            = "genstackio/lambda/aws"
-  version           = "0.1.3"
+  version           = "0.1.11"
+  s3_bucket         = var.package_s3_bucket
+  s3_key            = var.package_s3_key
   file              = var.package_file
   name              = var.name
   handler           = var.handler

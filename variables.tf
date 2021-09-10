@@ -8,7 +8,16 @@ variable "dns_zone" {
   type = string
 }
 variable "package_file" {
-  type = string
+  type    = string
+  default = null
+}
+variable "package_s3_bucket" {
+  type    = string
+  default = null
+}
+variable "package_s3_key" {
+  type    = string
+  default = null
 }
 variable "runtime" {
   type    = string
